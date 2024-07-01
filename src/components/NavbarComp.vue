@@ -19,10 +19,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link"  href="#">Home</a>
+                  <a class="nav-link"  href="#landingPage">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#aboutMe">About</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Resume</a>
@@ -56,6 +56,11 @@ export default {
     position: sticky;
     top: 0;
     z-index: 1;
+    padding: 15px;
+}
+
+.navbar a {
+  font-weight: bold;
 }
 #navbarSupportedContent li a i {
     font-size: 20em;
