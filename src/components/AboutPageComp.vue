@@ -21,7 +21,7 @@
             <div class="projects-button">
                 <a href="#">My Projects</a>
             </div>
-            <div>
+            <div class="projects-button">
                 <a href="#">My Resume</a>
             </div>
         </div>
@@ -33,10 +33,7 @@ export default {
 }
 </script>
 <style>
-.main-container {
-    display: flex;
-    flex-direction: row;
-}
+
 .button-container {
     margin-top: 5%;
     display: flex;
@@ -46,14 +43,14 @@ export default {
 }
 .projects-button {
     background-color: rgb(5, 138, 255);
-    border-radius: 10%;
-    padding: 5em;
+    border-radius: 5em;
+    padding: 1em;
     margin: 5em;
 }
 .projects-button a {
     text-decoration: none;
     color: whitesmoke;
-
+}
 .container-two{
     color: whitesmoke;
     height: 110vh;
