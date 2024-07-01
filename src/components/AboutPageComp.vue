@@ -26,7 +26,6 @@ export default {
 </script>
 <style>
 .container-two{
-    background-color: black;
     color: whitesmoke;
     height: 110vh;
     padding: 1em 2em;
