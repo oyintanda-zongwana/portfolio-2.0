@@ -5,7 +5,9 @@
   <section id="landingPage">
     <LandingPage/>
   </section>
-
+  <section id="aboutMe">
+    <AboutMe/>
+  </section>
 
     
 
@@ -15,12 +17,14 @@
 // @ is an alias to /src
 import LandingPage from '@/components/LandingPageComp.vue'
 import NavbarComp from '@/components/NavbarComp.vue'
+import AboutMe from '@/components/AboutPageComp.vue'
 
 export default {
   name: 'HomeView',
   components: {
     LandingPage,
-    NavbarComp
+    NavbarComp,
+    AboutMe
   }
 }
 </script>
