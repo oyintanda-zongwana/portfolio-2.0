@@ -56,6 +56,11 @@ export default {
     position: sticky;
     top: 0;
     z-index: 1;
+    padding: 15px;
+}
+
+.navbar a {
+  font-weight: bold;
 }
 #navbarSupportedContent li a i {
     font-size: 20em;
