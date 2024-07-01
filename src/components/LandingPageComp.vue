@@ -37,6 +37,7 @@ export default {
   background-color: black;
   color: whitesmoke;
   height: 110vh;
+  padding: 1em 2em;
 }
 h1 {
   font-size: 46px;
