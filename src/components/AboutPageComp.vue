@@ -17,6 +17,14 @@
                 <i class="lab la-html5"></i>
             </div>
         </div>
+        <div class="button-container">
+            <div class="projects-button">
+                <a href="#">My Projects</a>
+            </div>
+            <div>
+                <a href="#">My Resume</a>
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -25,6 +33,27 @@ export default {
 }
 </script>
 <style>
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+.button-container {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.projects-button {
+    background-color: rgb(5, 138, 255);
+    border-radius: 10%;
+    padding: 5em;
+    margin: 5em;
+}
+.projects-button a {
+    text-decoration: none;
+    color: whitesmoke;
+
 .container-two{
     color: whitesmoke;
     height: 110vh;
@@ -41,5 +70,6 @@ export default {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
 }
 </style>
