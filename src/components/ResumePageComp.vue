@@ -1,5 +1,6 @@
 <template>
     <h1>RESUME</h1>
+    <h2>This is the resume Page</h2>
     <div class="container-three">
         <div class="cards">
             <div class="item" v-for="item in items" :key="item.id">
