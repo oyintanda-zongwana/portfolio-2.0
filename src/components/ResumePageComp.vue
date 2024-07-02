@@ -1,6 +1,7 @@
 <template>
     <h1>RESUME</h1>
     <h2>This is the resume Page</h2>
+    <h3>Because you aren't allowed to pause 😎</h3>
     <div class="container-three">
         <div class="cards">
             <div class="item" v-for="item in items" :key="item.id">

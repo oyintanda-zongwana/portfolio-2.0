@@ -11,7 +11,9 @@
   <section id="resume">
     <Resume/>
   </section>
-    
+  <section id="projects">
+    <Projects/>
+  </section>
 
 </template>
 
@@ -21,6 +23,7 @@ import LandingPage from '@/components/LandingPageComp.vue'
 import NavbarComp from '@/components/NavbarComp.vue'
 import AboutMe from '@/components/AboutPageComp.vue'
 import Resume from '@/components/ResumePageComp.vue'
+import Projects from '@/components/ProjectsPageComp.vue'
 
 export default {
   name: 'HomeView',
@@ -28,7 +31,8 @@ export default {
     LandingPage,
     NavbarComp,
     AboutMe,
-    Resume
+    Resume,
+    Projects
   }
 }
 </script>

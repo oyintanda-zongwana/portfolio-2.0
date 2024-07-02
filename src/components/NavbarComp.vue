@@ -1,4 +1,5 @@
 <template>
+  <nav class="fixed-top">
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
             <nav class="navbar bg-body-tertiary">
@@ -28,7 +29,7 @@
                   <a class="nav-link" href="#resume">Resume</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Projects</a>
+                  <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Testimonials</a>
@@ -41,23 +42,24 @@
             </div>
     </nav>
     </nav>
+  </nav>
 </template>
 <script>
 export default {
 
 }
 </script>
-<style scoped>
+<style>
 .logo {
     background: white;
     border-radius: 35%;
 } 
-.navbar {
+/* .navbar {
     position: sticky;
     top: 0;
     z-index: 1;
     padding: 15px;
-}
+} */
 
 .navbar a {
   font-weight: bold;

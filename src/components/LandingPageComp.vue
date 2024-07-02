@@ -35,11 +35,11 @@ export default {
 .main-container {
   color: whitesmoke;
   height: 110vh;
-  padding: 1em 2em;
+  padding: 6em 2em;
 }
 h1 {
   font-size: 46px;
-    line-height: 54px;
+  line-height: 54px;
   margin: 40px 0 0;
 }
 h4 {
