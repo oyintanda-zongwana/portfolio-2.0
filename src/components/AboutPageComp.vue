@@ -1,9 +1,9 @@
 <template>
     <div class="container-two">
+        <h1>ABOUT ME</h1>
         <div class="nextToEachOther">
         <img src="https://oyintanda-zongwana.github.io/portfolioimgages/images/pic1.jpg" alt="..."  width="350em" height="400em">
         <div class="aboutme">
-            <h1>ABOUT ME</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Repellendus vero nihil doloremque, reprehenderit unde nam earum quod aut recusandae, culpa eos excepturi quaerat<br> laudantium saepe alias iusto fugiat necessitatibus tenetur?</p>
         </div>
         </div>
@@ -58,7 +58,8 @@ export default {
 .container-two{
     color: whitesmoke;
     height: 110vh;
-    padding: 1em 2em;
+    padding: 6em 6em;
+    overflow-y: hidden;
 }
 .nextToEachOther {
     display: flex;

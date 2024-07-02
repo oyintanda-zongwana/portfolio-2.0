@@ -88,6 +88,11 @@ export default {
 }
 </script>
 <style scoped>
+.container-four {
+    height: 110vh;
+    padding: 6em 6em;
+    overflow: hidden;
+}
 .carousel-item a {
     text-decoration: none;
 }
