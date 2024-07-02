@@ -54,7 +54,7 @@
                 </div>
                 </div>
                 <div class="carousel-item">
-                <img src="" class="d-block w-100" alt="...">
+                <img src="https://oyintanda-zongwana.github.io/portfolioimgages/images/pic1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>
@@ -88,6 +88,14 @@ export default {
 }
 </script>
 <style scoped>
+.carousel-item a {
+    text-decoration: none;
+}
+.carousel-item img {
+    /* background: center; */
+    width: 100%;
+    height: 50em;
+}
 h1 {
     color: whitesmoke;
 }
