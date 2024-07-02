@@ -3,7 +3,7 @@
         <div class="nextToEachOther">
         <img src="https://oyintanda-zongwana.github.io/portfolioimgages/images/pic1.jpg" alt="..."  width="350em" height="400em">
         <div class="aboutme">
-            <h1>About Me</h1>
+            <h1>ABOUT ME</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Repellendus vero nihil doloremque, reprehenderit unde nam earum quod aut recusandae, culpa eos excepturi quaerat<br> laudantium saepe alias iusto fugiat necessitatibus tenetur?</p>
         </div>
         </div>
@@ -19,10 +19,10 @@
         </div>
         <div class="button-container">
             <div class="projects-button">
-               <a href="#"><button>My Projects</button></a> 
+               <a href="#projects"><button>My Projects</button></a> 
             </div>
             <div class="projects-button">
-                <a href="#"><button >My Resume</button></a>
+                <a href="#resume"><button >My Resume</button></a>
             </div>
         </div>
     </div>
@@ -77,5 +77,6 @@ export default {
 .icons .lab:hover {
     background-color: whitesmoke;
     color: black;
+    border-radius: 1em;
 }
 </style>
