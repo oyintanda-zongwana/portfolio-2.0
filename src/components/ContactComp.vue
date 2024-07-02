@@ -1,5 +1,5 @@
 <template>
-    <div class="container-five">
+    <div class="container-six">
       <h1 class="title">Get in Touch</h1>
       <p class="description">I'd love to hear from you! Whether you have a project in mind or just want to say hello, feel free to reach out.</p>
       <form class="contact-form" @submit.prevent="handleSubmit"  action="https://formspree.io/f/mzzpbeoj"
@@ -46,7 +46,7 @@ export default {
 </script>
   
 <style scoped>
-.container-five {
+.container-six {
   color: whitesmoke;
   max-width: 600px;
   margin: 40px auto;
