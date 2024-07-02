@@ -13,6 +13,7 @@
           <a href="https://github.com/oyintanda-zongwana" target="_blank">
             <div class="link">
               <i class="lab la-github"></i>
+              <i class="lab la-linkedin"></i>
             </div>
           </a>
         </div>
