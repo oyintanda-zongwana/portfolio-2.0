@@ -19,10 +19,10 @@
         </div>
         <div class="button-container">
             <div class="projects-button">
-                <a href="#">My Projects</a>
+               <a href="#"><button>My Projects</button></a> 
             </div>
             <div class="projects-button">
-                <a href="#">My Resume</a>
+                <a href="#"><button >My Resume</button></a>
             </div>
         </div>
     </div>
@@ -40,16 +40,20 @@ export default {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    transition: ease 2s;
 }
-.projects-button {
+.button-container button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.projects-button button{
     background-color: rgb(5, 138, 255);
+    color: whitesmoke;
     border-radius: 5em;
     padding: 1em;
     margin: 5em;
-}
-.projects-button a {
-    text-decoration: none;
-    color: whitesmoke;
+    font-weight: 900;
+    border: none;
 }
 .container-two{
     color: whitesmoke;
@@ -67,6 +71,11 @@ export default {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    transition: ease 2s;
 
+}
+.icons .lab:hover {
+    background-color: whitesmoke;
+    color: black;
 }
 </style>

@@ -8,7 +8,9 @@
   <section id="aboutMe">
     <AboutMe/>
   </section>
-
+  <section id="resume">
+    <Resume/>
+  </section>
     
 
 </template>
@@ -18,13 +20,15 @@
 import LandingPage from '@/components/LandingPageComp.vue'
 import NavbarComp from '@/components/NavbarComp.vue'
 import AboutMe from '@/components/AboutPageComp.vue'
+import Resume from '@/components/ResumePageComp.vue'
 
 export default {
   name: 'HomeView',
   components: {
     LandingPage,
     NavbarComp,
-    AboutMe
+    AboutMe,
+    Resume
   }
 }
 </script>
@@ -36,10 +40,6 @@ export default {
     box-sizing: content-box;
     overflow-x: hidden;
     font-family: "League Spartan", sans-serif;
-}
-h1 {    font-size: 50px;
-    line-height: 64px;
-    color: #282525;
 }
 h2 {
     font-size: 46px;
