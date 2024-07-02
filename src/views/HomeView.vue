@@ -14,9 +14,9 @@
   <section id="projects">
     <Projects/>
   </section>
-  <!-- <section id="testimonials">
+  <section id="testimonials">
     <Testimonials/>
-  </section> -->
+  </section> 
   <section id="contact">
     <Contact/>
   </section>
@@ -30,7 +30,7 @@ import NavbarComp from '@/components/NavbarComp.vue'
 import AboutMe from '@/components/AboutPageComp.vue'
 import Resume from '@/components/ResumeComp.vue'
 import Projects from '@/components/ProjectsComp.vue'
-// import Testimonials from '@/components/TestimonialsComp.vue'
+import Testimonials from '@/components/TestimonialsComp.vue'
 import Contact from '@/components/ContactComp.vue'
 
 export default {
@@ -41,7 +41,7 @@ export default {
     AboutMe,
     Resume,
     Projects,
-    // Testimonials,
+    Testimonials,
     Contact
   }
 }
