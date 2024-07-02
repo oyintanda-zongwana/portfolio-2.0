@@ -13,7 +13,6 @@
           <a href="https://github.com/oyintanda-zongwana" target="_blank">
             <div class="link">
               <i class="lab la-github"></i>
-              <h2>Github</h2>
             </div>
           </a>
         </div>
@@ -52,5 +51,14 @@ h4 {
 .social {
   font-size: 3em;
 }
+.social a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.social a i:hover {
+  color: black;
+  background-color: whitesmoke;
+}
+
 
 </style>
