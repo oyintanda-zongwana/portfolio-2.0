@@ -6,7 +6,7 @@
       <div class="container-one">
         <div class="profile">
           <img src="https://oyintanda-zongwana.github.io/portfolioimgages/images/pic2.jpg" alt="ME" width="350em" height="400em">
-          <h1>Hi, I'm Mans</h1>
+          <h1>Hi, I'm Oyintanda Zongwana</h1>
           <h4>I'm an Aspiring Fullstack Developer</h4>
         </div>
         <div class="social">
