@@ -20,7 +20,9 @@
   <section id="contact">
     <Contact/>
   </section>
-
+  <section id="footer">
+    <Footer/>
+  </section>
 </template>
 
 <script>
@@ -32,6 +34,7 @@ import Resume from '@/components/ResumeComp.vue'
 import Projects from '@/components/ProjectsComp.vue'
 import Testimonials from '@/components/TestimonialsComp.vue'
 import Contact from '@/components/ContactComp.vue'
+import Footer from '@/components/FooterComp.vue'
 
 export default {
   name: 'HomeView',
@@ -42,7 +45,8 @@ export default {
     Resume,
     Projects,
     Testimonials,
-    Contact
+    Contact,
+    Footer
   }
 }
 </script>
