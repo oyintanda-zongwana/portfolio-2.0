@@ -1,4 +1,5 @@
 <template>
+  <h1>CONTACT ME @</h1>
     <div class="container-six">
       <h1 class="title">Get in Touch</h1>
       <p class="description">I'd love to hear from you! Whether you have a project in mind or just want to say hello, feel free to reach out.</p>
@@ -46,8 +47,15 @@ export default {
 </script>
   
 <style scoped>
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: whitesmoke;
+}
 .container-six {
   color: whitesmoke;
+  padding: 6em 6em;
+  overflow: hidden;
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;

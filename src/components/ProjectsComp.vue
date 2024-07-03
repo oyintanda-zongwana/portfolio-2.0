@@ -9,7 +9,7 @@
                 </div>
                 <div class="carousel-inner">
                     <div v-for="(project, index) in projects" :key="index" class="carousel-item" :class="{ 'active': index === 0 }">
-                        <img :src="project.image" class="d-block w-100" alt="...">
+                        <img :src="project.image" class="d-block w-100" alt="..." width="50em">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>{{ project.name }}</h5>
                             <p>{{ project.description }}</p>
@@ -54,9 +54,21 @@ export default {
 }
 .carousel-item img {
     width: 100%;
-    height: 50em;
+    height: 45em;
+}
+h5, p {
+    background-color: black;
+    color: whitesmoke;
+}
+a button {
+    padding: 0.3em;
+    margin: 1em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: whitesmoke;
 }
 h1 {
     color: whitesmoke;
 }
+
 </style>
