@@ -69,7 +69,7 @@ export default {
 .card-body {
   background-color: #2c2c2c;
   color: whitesmoke;
-  height: 16em;
+  height: 25em;
   padding: 1.5em;
   text-align: left;
 }
@@ -97,6 +97,10 @@ export default {
 
   .testimonials h1 {
     font-size: 3em;
+  }
+
+  .card-body {
+    height: 16em;
   }
 }
 </style>

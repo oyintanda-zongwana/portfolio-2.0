@@ -106,6 +106,9 @@ export default {
   margin-top: 2em;
 }
 
+.icons div:hover {
+  transform: scale(1.2);
+}
 .skill {
   text-align: center;
 }
