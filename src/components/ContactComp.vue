@@ -1,31 +1,54 @@
 <template>
-  <h1>CONTACT ME @</h1>
-    <div class="container-six">
-      <h1 class="title">Get in Touch</h1>
-      <p class="description">I'd love to hear from you! Whether you have a project in mind or just want to say hello, feel free to reach out.</p>
-      <form class="contact-form" @submit.prevent="handleSubmit"  action="https://formspree.io/f/mzzpbeoj"
-      method="POST">
-        <div class="form-group">
-          <input type="text" id="name" v-model="formData.name" placeholder="Name" required>
-          <label for="name">Name</label>
+  <div class="container-six">
+    <h1>CONTACT ME @</h1>
+    <div class="contact-info">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="contact-item" data-aos="fade-up">
+            <div class="circle">
+              <i class="las la-phone"></i>
+            </div>
+            <h4>076 480 1680</h4>
+          </div>
         </div>
-        <div class="form-group">
-          <input type="email" id="email" v-model="formData.email" placeholder="Email" required>
-          <label for="email">Email</label>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="circle">
+              <i class="lar la-envelope"></i>
+            </div>
+            <h4>oyintandazongone@gmail.com</h4>
+          </div>
         </div>
-        <div class="form-group">
-          <textarea id="message" v-model="formData.message" placeholder="Message" required></textarea>
-          <label for="message">Message</label>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="contact-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="circle">
+              <i class="las la-home"></i>
+            </div>
+            <h4>Mfuleni</h4>
+          </div>
         </div>
-        <button class="submit-btn">Send Message</button>
-      </form>
-      <div class="social-links">
-        <a href="#" target="_blank"><i class="lab la-linkedin"></i></a>
-        <a href="https://github.com/oyintanda-zongwana" target="_blank"><i class="lab la-github"></i></a>
       </div>
     </div>
-  </template>
-  
+    <h3 class="description">I'd love to hear from you! Whether you have a project in mind or just want to say hello, feel free to reach out.</h3>
+    <form class="contact-form" @submit.prevent="handleSubmit">
+      <div class="form-group" data-aos="fade-up">
+        <input type="text" id="name" v-model="formData.name" placeholder="Name" required>
+      </div>
+      <div class="form-group" data-aos="fade-up" data-aos-delay="200">
+        <input type="email" id="email" v-model="formData.email" placeholder="Email" required>
+      </div>
+      <div class="form-group" data-aos="fade-up" data-aos-delay="400">
+        <textarea id="message" v-model="formData.message" placeholder="Message" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn" data-aos="fade-up" data-aos-delay="600">Send Message</button>
+    </form>
+    <div class="social-links">
+      <a href="#" target="_blank"><i class="lab la-linkedin"></i></a>
+      <a href="https://github.com/oyintanda-zongwana" target="_blank"><i class="lab la-github"></i></a>
+    </div>
+  </div>
+</template>
+
 <script>
 export default {
   data() {
@@ -45,81 +68,110 @@ export default {
   }
 }
 </script>
-  
+
 <style scoped>
 h1 {
+  margin-top: 2.5em;
   font-size: 2.5rem;
   font-weight: 700;
   color: whitesmoke;
+  text-align: center;
 }
+
 .container-six {
-  color: whitesmoke;
-  padding: 6em 6em;
-  overflow: hidden;
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
+  padding: 4em 2em;
   background-color: #000;
-  border: 1px solid #333;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: whitesmoke;
+  text-align: center;
 }
-.title {
-  font-size: 24px;
-  font-weight: 900;
-  margin-bottom: 10px;
+
+.contact-info {
+  margin-bottom: 3em;
 }
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  height: 3em;
+  width: 3em;
+  background-color: whitesmoke;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+.circle:hover {
+  background-color: black;
+  color: whitesmoke;
+  transition: background-color 0.4s ease;
+}
+
 .description {
-  font-size: 16px;
+  font-size: 1.25rem;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 2em;
 }
+
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 1.5em;
 }
+
 input, textarea {
-width: 100%;
-padding: 10px;
-font-size: 16px;
+  width: 100%;
+  padding: 1em;
+  font-size: 1rem;
   border: none;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid whitesmoke;
   background-color: #000;
   color: whitesmoke;
+  transition: border-color 0.3s ease;
 }
+
 input:focus, textarea:focus {
-  border-bottom: 1px solid whitesmoke;
+  outline: none;
+  border-color: #29829b;
 }
-label {
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
+
 .submit-btn {
   background-color: whitesmoke;
   color: #000;
-  padding: 10px 20px;
+  padding: 1em 2em;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.5em;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .submit-btn:hover {
-  background-color: whitesmoke;
+  background-color: #29829b;
+  color: whitesmoke;
 }
+
 .social-links {
-margin-top: 20px;
-display: flex;
-justify-content: center;
+  margin-top: 2em;
 }
+
 .social-links a {
-  margin: 0 10px;
-  font-size: 24px;
+  margin: 0 1em;
+  font-size: 1.5rem;
   color: #fff;
+  transition: transform 0.3s ease;
 }
+
 .social-links a:hover {
-  color: #ccc;
+  transform: scale(1.2);
 }
 </style>

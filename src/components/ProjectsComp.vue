@@ -1,74 +1,142 @@
 <template>
     <div class="container-four">
-        <h1>PROJECTS</h1>
-        <div class="row">
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button v-for="(project, index) in projects" :key="index" type="button" data-bs-target="#carouselExampleCaptions" :data-bs-slide-to="index" :aria-label="`Slide ${index + 1}`"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div v-for="(project, index) in projects" :key="index" class="carousel-item" :class="{ 'active': index === 0 }">
-                        <img :src="project.image" class="d-block w-100" alt="..." width="50em">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>{{ project.name }}</h5>
-                            <p>{{ project.description }}</p>
-                            <a :href="project.github" target="_blank"><button>Github</button></a><a :href="project.live" _blank><button>Go Live</button></a>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+      <h1>PROJECTS</h1>
+      <div class="row">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button v-for="(project, index) in projects" :key="index" type="button" data-bs-target="#carouselExampleCaptions" :data-bs-slide-to="index" :aria-label="`Slide ${index + 1}`"></button>
+          </div>
+          <div class="carousel-inner">
+            <div v-for="(project, index) in projects" :key="index" class="carousel-item" :class="{ 'active': index === 0 }">
+              <img :src="project.image" class="d-block w-100" alt="Project Image">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>{{ project.name }}</h5>
+                <p>{{ project.description }}</p>
+                <a :href="project.github" target="_blank"><button class="btn btn-primary">GitHub</button></a>
+                <a :href="project.live" target="_blank"><button class="btn btn-secondary">Live Demo</button></a>
+              </div>
             </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+      </div>
     </div>
-</template>
-
-<script>
-export default {
+  </template>
+  
+  <script>
+  export default {
     computed: {
-        projects() {
-            return this.$store.state.projects
-        }
+      projects() {
+        return this.$store.state.projects;
+      }
     },
-    mounted(){
-        this.$store.dispatch('getData')
+    mounted() {
+      this.$store.dispatch('getData');
     }
-}
-</script>
-
-<style scoped>
-.container-four {
-    height: 110vh;
-    padding: 6em 6em;
-    overflow: hidden;
-}
-.carousel-item a {
-    text-decoration: none;
-}
-.carousel-item img {
+  };
+  </script>
+  
+  <style scoped>
+  .container-four {
+    padding: 2em 1em;
+    text-align: center;
+    background-color: #1a1a1a;
+  }
+  
+  h1 {
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    color: #ffffff;
+  }
+  
+  .carousel-item img {
     width: 100%;
-    height: 45em;
-}
-h5, p {
-    background-color: black;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1em;
+    border-radius: 1.5em;
+  }
+  
+  .carousel-caption h5,
+  .carousel-caption p {
     color: whitesmoke;
-}
-a button {
-    padding: 0.3em;
-    margin: 1em;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+  
+  .carousel-caption a button {
+    padding: 0.5em 1em;
+    margin: 0.5em;
     border: none;
     border-radius: 0.5em;
-    background-color: whitesmoke;
-}
-h1 {
+    font-weight: 700;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
     color: whitesmoke;
-}
-
-</style>
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    color: whitesmoke;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: whitesmoke;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+    color: whitesmoke;
+  }
+  
+  @media (min-width: 768px) {
+    .container-four {
+      padding: 4em 6em;
+    }
+  
+    h1 {
+      font-size: 3em;
+    }
+  
+    .carousel-caption {
+      padding: 1.5em;
+    }
+  
+    .carousel-caption h5 {
+      font-size: 2em;
+    }
+  
+    .carousel-caption p {
+      font-size: 1.5em;
+    }
+  
+    .carousel-caption a button {
+      padding: 0.7em 1.5em;
+    }
+  }
+  </style>
+  

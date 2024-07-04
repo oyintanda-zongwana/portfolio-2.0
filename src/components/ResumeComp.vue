@@ -1,9 +1,10 @@
 <template>
+  <div class="resume-section" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
     <h1>RESUME</h1>
     <h2>This is the resume Page</h2>
     <h3>Because you aren't allowed to pause 😎</h3>
-    <div class="container-three d-flex justify-content-center">
-      <div class="cards">
+    <div class="container-three">
+      <div class="cards" data-aos="zoom-in">
         <div class="item" v-for="item in education" :key="item.id">
           <div class="pro">
             <h2>{{ item.Institution }}</h2>
@@ -17,63 +18,112 @@
         </div>
       </div>
     </div>
-  </template>
-  
-  <script>
-  import { mapState } from 'vuex'
-  
-  export default {
-    computed: {
-      ...mapState(['education'])
-    },
-    mounted() {
-      this.$store.dispatch('getData')
-    }
+  </div>
+</template>
+
+<script>
+import { mapState } from 'vuex';
+
+export default {
+  computed: {
+    ...mapState(['education'])
+  },
+  mounted() {
+    this.$store.dispatch('getData');
   }
-  </script>
+};
+</script>
+
 <style scoped>
+.resume-section {
+  text-align: center;
+  color: whitesmoke;
+  padding: 4em 1em;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  font-size: 2.5em;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+h3 {
+  margin-bottom: 2em;
+  font-size: 1.5em;
+  color: #29829b;
+}
+
 .container-three {
-    height: 110vh;
-    padding: 6em 45em;
-    color: whitesmoke;
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
 }
-h1, h2, h3 {
-    color: whitesmoke;
-}
+
 .pro {
-    width: 80vh;
-    min-width: 250px;
-    padding: 10px 12px;
-    border: 1px solid rgb(99, 95, 95);
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 15px 15px 20px rgb(0, 0, 0, 0.01);
-    margin: 15px 0;
-    transition: 0.2s ease;
-    position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5em;
+  border: 1px solid rgb(99, 95, 95);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  width: 100%;
+  max-width: 350px;
+  margin: 1em;
 }
+
 .pro:hover {
-    box-shadow: 20px 20px 30px rgba(255, 255, 255, 0.36);
+  box-shadow: 0 12px 24px rgba(255, 255, 255, 0.3);
+  transform: translateY(-10px);
 }
+
 .pro .des {
-    text-align: start;
-    padding: 10px 0;
+  text-align: left;
+  margin-top: 1em;
 }
+
 .pro .des span {
-    color: whitesmoke;;
-    font-size: 12px;
+  display: block;
+  font-size: 0.9em;
+  color: #ccc;
 }
-.pro .des h5 {
-    padding-top: 7px;
-    color: whitesmoke;
-    font-size: 14px;
+
+.pro .des h5, .pro .des h4 {
+  margin: 0.5em 0;
+  font-size: 1em;
 }
-.pro .des h4 {
-    padding-top: 7px;
-    font-size: 15px;
-    font-weight: 900;
-    color: whitesmoke;
+
+@media (min-width: 768px) {
+  .resume-section {
+    padding: 6em 4em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  .pro {
+    padding: 2em;
+  }
+
+  .pro .des span {
+    font-size: 1em;
+  }
+
+  .pro .des h5, .pro .des h4 {
+    font-size: 1.2em;
+  }
 }
 </style>
