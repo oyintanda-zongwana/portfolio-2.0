@@ -40,7 +40,10 @@
       <div class="form-group" data-aos="fade-up" data-aos-delay="400">
         <textarea id="message" v-model="formData.message" placeholder="Message" required></textarea>
       </div>
-      <button type="submit" class="submit-btn" data-aos="fade-up" data-aos-delay="600">Send Message</button>
+      <div class="btn-group" data-aos="fade-up" data-aos-delay="600">
+        <button type="submit" class="submit-btn">Send Message</button>
+        <button type="reset" class="submit-btn">Clear</button>
+      </div>
     </form>
     <div class="social-links">
       <a href="#" target="_blank"><i class="lab la-linkedin"></i></a>
@@ -71,7 +74,7 @@ export default {
 
 <style scoped>
 h1 {
-  margin-top: 2.5em;
+  margin-top: 2em;
   font-size: 2.5rem;
   font-weight: 700;
   color: whitesmoke;
@@ -79,7 +82,7 @@ h1 {
 }
 
 .container-six {
-  padding: 4em 2em;
+  /* padding: 1em 2em; */
   background-color: #000;
   color: whitesmoke;
   text-align: center;
@@ -91,6 +94,7 @@ h1 {
 
 .contact-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -104,13 +108,18 @@ h1 {
   justify-content: center;
   font-size: 1.5rem;
   border-radius: 50%;
-  margin-right: 1em;
+  margin-bottom: 1em;
 }
 
 .circle:hover {
   background-color: black;
   color: whitesmoke;
   transition: background-color 0.4s ease;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .description {
@@ -126,6 +135,7 @@ h1 {
 }
 
 .form-group {
+  width: 100%;
   margin-bottom: 1.5em;
 }
 
@@ -145,10 +155,16 @@ input:focus, textarea:focus {
   border-color: #29829b;
 }
 
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
 .submit-btn {
   background-color: whitesmoke;
   color: #000;
-  padding: 1em 2em;
+  padding: 0.75em 1.5em;
   border: none;
   border-radius: 0.5em;
   cursor: pointer;
@@ -167,11 +183,11 @@ input:focus, textarea:focus {
 .social-links a {
   margin: 0 1em;
   font-size: 1.5rem;
-  color: #fff;
+  color: whitesmoke;
   transition: transform 0.3s ease;
 }
 
-.social-links a:hover {
-  transform: scale(1.2);
+.social-links a :hover {
+  transform: scale(1.5);
 }
 </style>

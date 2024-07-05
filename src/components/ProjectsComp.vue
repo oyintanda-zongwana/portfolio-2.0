@@ -52,6 +52,7 @@
   }
   
   h1 {
+    margin-top: 0.3em;
     margin-bottom: 1em;
     font-size: 2.5em;
     color: #ffffff;

@@ -68,7 +68,8 @@ export default {
 }
 
 .container-two h1 {
-  margin-bottom: 2em;
+  margin-top: 0.3em;
+  margin-bottom: 1em;
   text-align: center;
 }
 
@@ -101,7 +102,7 @@ export default {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: 1.1em;
   font-size: 3em;
   margin-top: 2em;
 }

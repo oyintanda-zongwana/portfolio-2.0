@@ -70,7 +70,7 @@ h4 {
   font-size: 2em;
   display: flex;
   justify-content: center;
-  gap: 1.5em;
+  gap: 0.1em;
 }
 
 .social a {
@@ -95,6 +95,8 @@ h4 {
   }
 
   .social {
+    font-size: 2.5em;
+    margin-top: -0.9em;
     flex: 1;
     justify-content: flex-start;
     align-items: center;
