@@ -1,13 +1,14 @@
 <template>
-    <div class="container-four">
-      <h1>PROJECTS</h1>
-      <div class="row">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button v-for="(project, index) in projects" :key="index" type="button" data-bs-target="#carouselExampleCaptions" :data-bs-slide-to="index" :aria-label="`Slide ${index + 1}`"></button>
-          </div>
-          <div class="carousel-inner">
+  <div class="container-four">
+    <h1>PROJECTS</h1>
+    <div class="row">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button v-for="(project, index) in projects" :key="index" type="button" data-bs-target="#carouselExampleCaptions" :data-bs-slide-to="index" :aria-label="`Slide ${index + 1}`"></button>
+        </div>
+        <div class="carousel-inner">
+            <div v-if="projects">
             <div v-for="(project, index) in projects" :key="index" class="carousel-item" :class="{ 'active': index === 0 }">
               <img :src="project.image" class="d-block w-100" alt="Project Image">
               <div class="carousel-caption d-none d-md-block">
@@ -17,6 +18,8 @@
                 <a :href="project.live" target="_blank"><button class="btn btn-secondary">Live Demo</button></a>
               </div>
             </div>
+            </div>
+            <div v-else class="Spinner"><Spinner/></div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -29,10 +32,16 @@
         </div>
       </div>
     </div>
+
   </template>
   
   <script>
+import Spinner from '@/components/SpinnerComp.vue'
+
   export default {
+    components: {
+      Spinner
+    },
     computed: {
       projects() {
         return this.$store.state.projects;
@@ -55,7 +64,7 @@
     margin-top: 0.3em;
     margin-bottom: 1em;
     font-size: 2.5em;
-    color: #ffffff;
+    color: whitesmoke;
   }
   
   .carousel-item img {

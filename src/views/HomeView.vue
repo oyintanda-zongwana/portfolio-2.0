@@ -35,6 +35,7 @@ import Projects from '@/components/ProjectsComp.vue'
 import Testimonials from '@/components/TestimonialsComp.vue'
 import Contact from '@/components/ContactComp.vue'
 import Footer from '@/components/FooterComp.vue'
+// import Spinner from '@/components/SpinnerComp.vue'
 
 export default {
   name: 'HomeView',
@@ -46,7 +47,8 @@ export default {
     Projects,
     Testimonials,
     Contact,
-    Footer
+    Footer,
+    // Spinner
   }
 }
 </script>

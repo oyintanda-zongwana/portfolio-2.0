@@ -2,18 +2,26 @@
   <div class="container-five" id="five">
     <section class="testimonials py-5">
       <div class="container">
-        <h1 class="text-center mb-5">TESTIMONIALS</h1>
+        <h1 class="text-center mb-5">Testimonials</h1>
         <div class="row">
-          <div v-for="(testimonial, index) in testimonials" :key="index" class="col-lg-4 col-md-6 mb-4">
-            <div class="card" data-aos="zoom-in">
-              <img :src="testimonial.image" loading="lazy" class="card-img-top" alt="Testimonial Image">
-              <div class="card-body">
-                <h5 class="card-title">{{ testimonial.name }}</h5>
-                <h6 class="card-subtitle">{{ testimonial.position }}</h6>
-                <p class="card-text">{{ testimonial.message }}</p>
+          <template v-if="isLoading">
+            <Spinner />
+          </template>
+          <template v-else-if="testimonials && testimonials.length">
+            <div v-for="(testimonial, index) in testimonials" :key="index" class="col-lg-4 col-md-6 mb-4">
+              <div class="card" data-aos="zoom-in">
+                <img :src="testimonial.image" loading="lazy" class="card-img-top" alt="Testimonial Image">
+                <div class="card-body">
+                  <h5 class="card-title">{{ testimonial.name }}</h5>
+                  <h6 class="card-subtitle text-muted">{{ testimonial.position }}</h6>
+                  <p class="card-text">{{ testimonial.message }}</p>
+                </div>
               </div>
             </div>
-          </div>
+          </template>
+          <template v-else>
+            <p>No testimonials available.</p>
+          </template>
         </div>
       </div>
     </section>
@@ -21,11 +29,27 @@
 </template>
 
 <script>
+import Spinner from '@/components/SpinnerComp.vue';
+
 export default {
+  components: {
+    Spinner
+  },
+  data() {
+    return {
+      isLoading: true
+    };
+  },
   computed: {
     testimonials() {
       return this.$store.state.testimonials;
     }
+  },
+  mounted() {
+    // Simulate loading delay
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 6000); // Adjust the delay time (in milliseconds) as needed
   }
 };
 </script>
@@ -56,7 +80,7 @@ export default {
 
 .card:hover {
   cursor: pointer;
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 .card-img-top {

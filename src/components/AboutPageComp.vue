@@ -89,6 +89,10 @@ export default {
   margin-bottom: 1em;
 }
 
+.about-description {
+  margin-top: 1em;
+}
+
 .about-description h4 {
   margin: 0.5em 0;
   text-align: center;
