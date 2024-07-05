@@ -84,7 +84,7 @@ export default {
 }
 
 .card-img-top {
-  height: 25em;
+  height: 25em fixed;
   object-fit: cover;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
