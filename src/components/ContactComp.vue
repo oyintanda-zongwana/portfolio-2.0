@@ -30,17 +30,17 @@
       </div>
     </div>
     <h3 class="description">I'd love to hear from you! Whether you have a project in mind or just want to say hello, feel free to reach out.</h3>
-    <form class="contact-form" @submit.prevent="handleSubmit">
+    <form class="contact-form" action="https://formspree.io/f/mzzpbeoj" target="_blank" method="POST">
       <div class="form-group" data-aos="fade-up">
-        <input type="text" id="name" v-model="formData.name" placeholder="Name" required>
+        <input type="text" name="name" id="name" placeholder="Name" required>
       </div>
       <div class="form-group" data-aos="fade-up" data-aos-delay="200">
-        <input type="email" id="email" v-model="formData.email" placeholder="Email" required>
+        <input type="email" name="email" id="email" placeholder="Email" required>
       </div>
       <div class="form-group" data-aos="fade-up" data-aos-delay="400">
-        <textarea id="message" v-model="formData.message" placeholder="Message" required></textarea>
+        <textarea name="message" id="message" placeholder="Message" required></textarea>
       </div>
-      <div class="btn-group" data-aos="fade-up" data-aos-delay="600">
+      <div class="btn-group" data-aos="fade-up" data-aos-delay="600" >
         <button type="submit" class="submit-btn">Send Message</button>
         <button type="reset" class="submit-btn">Clear</button>
       </div>
@@ -54,21 +54,7 @@
 
 <script>
 export default {
-  data() {
-    return {
-      formData: {
-        name: '',
-        email: '',
-        message: ''
-      }
-    }
-  },
-  methods: {
-    handleSubmit() {
-      // Add your form submission logic here
-      console.log('Form submitted:', this.formData)
-    }
-  }
+  
 }
 </script>
 

@@ -49,7 +49,7 @@ export default {
     // Simulate loading delay
     setTimeout(() => {
       this.isLoading = false;
-    }, 6000); // Adjust the delay time (in milliseconds) as needed
+    }, 7000); // Adjust the delay time (in milliseconds) as needed
   }
 };
 </script>
@@ -124,7 +124,7 @@ export default {
   }
 
   .card-body {
-    height: 16em;
+    height: 17.5em;
   }
 }
 </style>
