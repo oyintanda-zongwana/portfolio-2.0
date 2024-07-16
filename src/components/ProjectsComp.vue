@@ -15,7 +15,7 @@
                 <h5>{{ project.name }}</h5>
                 <p>{{ project.description }}</p>
                 <a :href="project.github" target="_blank"><button class="btn btn-primary">GitHub</button></a>
-                <a :href="project.live" target="_blank"><button class="btn btn-secondary">Live Demo</button></a>
+                <a :href="project.vercel" target="_blank"><button class="btn btn-secondary">Live Demo</button></a>
               </div>
             </div>
             </div>
