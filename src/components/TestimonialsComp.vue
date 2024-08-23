@@ -49,7 +49,7 @@ export default {
     // Simulate loading delay
     setTimeout(() => {
       this.isLoading = false;
-    }, 7000); // Adjust the delay time (in milliseconds) as needed
+    }, 15000); // Adjust the delay time (in milliseconds) as needed
   }
 };
 </script>
