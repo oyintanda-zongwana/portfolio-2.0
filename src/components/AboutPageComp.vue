@@ -17,7 +17,7 @@
         </div>
         <div>
           <i class="lab la-css3-alt"></i>
-          <h4>Advanced</h4>
+          <h4>Intermediate</h4>
         </div>
         <div>
           <i class="lab la-js-square"></i>
@@ -30,6 +30,35 @@
         <div>
           <i class="lab la-html5"></i>
           <h4>Advanced</h4>
+        </div>
+        <div>
+          <i class="lab la-node-js"></i>
+          <h4>Beginner</h4>
+        </div>
+        <div>
+          <i class="lab la-git"></i>
+          <h4>advanced</h4>
+        </div>
+        <div>
+          <i class="las la-database"></i>
+          <h4>Beginner</h4>
+        </div>
+      </div>
+    </div><br><br>
+    <div class="skills">
+      <h1>Soft skills</h1>
+      <div class="icons">
+        <div>
+          <i class="las la-assistive-listening-systems"></i>
+          <h4>Good Listener</h4>
+        </div>
+        <div>
+          <i class="las la-users"></i>
+          <h4>Group player</h4>
+        </div>
+        <div>
+          <i class="las la-microphone"></i>
+          <h4>Good communication</h4>
         </div>
       </div>
     </div>

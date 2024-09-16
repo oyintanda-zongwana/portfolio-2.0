@@ -69,8 +69,7 @@ import Spinner from '@/components/SpinnerComp.vue'
   
   .carousel-item img {
     width: 100%;
-    height: auto;
-    max-height: 500px;
+    height: 85vh;
     object-fit: cover;
   }
   

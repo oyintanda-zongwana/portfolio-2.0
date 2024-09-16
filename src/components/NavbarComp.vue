@@ -22,9 +22,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#testimonials">Testimonials</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>

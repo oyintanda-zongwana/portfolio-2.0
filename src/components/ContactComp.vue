@@ -40,13 +40,13 @@
       <div class="form-group" data-aos="fade-up" data-aos-delay="400">
         <textarea name="message" id="message" placeholder="Message" required></textarea>
       </div>
-      <div class="btn-group" data-aos="fade-up" data-aos-delay="600" >
+      <div class="btn-group">
         <button type="submit" class="submit-btn">Send Message</button>
         <button type="reset" class="submit-btn">Clear</button>
       </div>
     </form>
     <div class="social-links">
-      <a href="#" target="_blank"><i class="lab la-linkedin"></i></a>
+      <a href="https://www.linkedin.com/in/oyintanda-zongwana-259741266/" target="_blank"><i class="lab la-linkedin"></i></a>
       <a href="https://github.com/oyintanda-zongwana" target="_blank"><i class="lab la-github"></i></a>
     </div>
   </div>

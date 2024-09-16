@@ -1,8 +1,7 @@
 <template>
   <div class="resume-section" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
     <h1>RESUME</h1>
-    <h2>This is the resume Page</h2>
-    <h3>Because you aren't allowed to pause 😎</h3>
+    <h2>Education</h2>
     <div class="container-three">
       <div class="cards" data-aos="zoom-in">
         <div class="item" v-for="item in education" :key="item.id">
@@ -11,8 +10,10 @@
             <div class="des">
               <span>{{ item.year }}</span>
               <h5>{{ item.description }}</h5>
-              <h4>{{ item.contact.name }}</h4>
-              <h4>{{ item.contact.contactDetails }}</h4>
+              <div v-for="(contact, contactIndex) in item.contact" :key="contactIndex">
+                <h4>Contact Name: {{ contact.name }}</h4>
+                <h4>Contact Details: {{ contact.contactDetails }}</h4>
+              </div>
             </div>
           </div>
         </div>
