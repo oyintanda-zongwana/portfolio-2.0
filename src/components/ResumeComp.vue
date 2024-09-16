@@ -1,7 +1,6 @@
 <template>
   <div class="resume-section" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-    <h1>RESUME</h1>
-    <h2>Education</h2>
+    <h1>Education</h1>
     <div class="container-three">
       <div class="cards" data-aos="zoom-in">
         <div class="item" v-for="item in education" :key="item.id">
