@@ -62,14 +62,14 @@ import Spinner from '@/components/SpinnerComp.vue'
   
   h1 {
     margin-top: 0.3em;
-    margin-bottom: 1em;
+    margin-bottom: 0.2em;
     font-size: 2.5em;
     color: whitesmoke;
   }
   
   .carousel-item img {
     width: 100%;
-    height: 85vh;
+    height: 83vh;
     object-fit: cover;
   }
   
