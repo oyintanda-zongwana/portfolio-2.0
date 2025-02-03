@@ -40,7 +40,11 @@
           <h4>advanced</h4>
         </div>
         <div>
-          <i class="las la-database"></i>
+          <i class="lab la-wordpress"></i>
+          <h4>Beginner</h4>
+        </div>
+        <div>
+          <i class="lab la-python"></i>
           <h4>Beginner</h4>
         </div>
       </div>
