@@ -65,6 +65,9 @@
           <h4>Good communication</h4>
         </div>
       </div>
+    </div><br><br>
+    <div class="badges">
+      badges here
     </div>
     <div class="button-container">
       <div class="projects-button">
