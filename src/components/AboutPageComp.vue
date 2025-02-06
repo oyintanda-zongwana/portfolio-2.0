@@ -91,14 +91,6 @@
     ></div>
   </div>
 </div>
-    <div class="button-container">
-      <div class="projects-button">
-        <a href="#projects"><button>My Projects</button></a>
-      </div>
-      <div class="projects-button">
-        <a href="#resume"><button>My Resume</button></a>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -207,6 +199,7 @@ export default {
 .badge-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin-top: 1em;
 }
 
@@ -219,24 +212,6 @@ export default {
 
 .badge-container div:hover {
   transform: scale(1.05);
-}
-
-.button-container {
-  margin-top: 3em;
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-}
-
-.projects-button button {
-  background-color: rgb(5, 138, 255);
-  color: whitesmoke;
-  border-radius: 25px;
-  padding: 0.75em 1.5em;
-  font-weight: 900;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .projects-button button:hover {
