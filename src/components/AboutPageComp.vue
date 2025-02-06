@@ -66,9 +66,19 @@
         </div>
       </div>
     </div><br><br>
-    <div class="badges">
-      badges here
-    </div>
+        <!-- Badges Section -->
+<div class="badges">
+  <h2>Badges</h2>
+  <div class="badge-container">
+    <div 
+      ref="credlyBadge"
+      data-iframe-width="150"
+      data-iframe-height="270"
+      data-share-badge-id="d24b0fba-5c5f-4a98-b348-6da34674f2cf"
+      data-share-badge-host="https://www.credly.com"
+    ></div>
+  </div>
+</div>
     <div class="button-container">
       <div class="projects-button">
         <a href="#projects"><button>My Projects</button></a>
@@ -91,8 +101,31 @@ export default {
     }
   },
   mounted() {
-    this.$store.dispatch('getData');
+  this.$store.dispatch('getData');
+  this.loadCredlyBadge(); // Add this line to load the badge when component mounts
+},
+  methods: {
+  loadCredlyBadge() {
+    // Check if script is already loaded
+    if (document.querySelector('script[src="https://cdn.credly.com/assets/utilities/embed.js"]')) {
+      return;
+    }
+    
+    const script = document.createElement('script');
+    script.src = 'https://cdn.credly.com/assets/utilities/embed.js';
+    script.async = true;
+    
+    script.onload = () => {
+      console.log('Credly badge script loaded successfully');
+    };
+    
+    script.onerror = (error) => {
+      console.error('Error loading Credly badge script:', error);
+    };
+    
+    document.body.appendChild(script);
   }
+}
 }
 </script>
 
@@ -152,6 +185,28 @@ export default {
 }
 .skill {
   text-align: center;
+}
+
+.badges {
+  margin: 2em 0;
+  text-align: center;
+}
+
+.badge-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.badge-container div {
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.badge-container div:hover {
+  transform: scale(1.05);
 }
 
 .button-container {
