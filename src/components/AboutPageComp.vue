@@ -77,6 +77,18 @@
       data-share-badge-id="d24b0fba-5c5f-4a98-b348-6da34674f2cf"
       data-share-badge-host="https://www.credly.com"
     ></div>
+    <div 
+      data-iframe-width="150" 
+      data-iframe-height="270" 
+      data-share-badge-id="039d7a1b-88e2-486f-89c0-12c8aea74697" 
+      data-share-badge-host="https://www.credly.com"
+    ></div>
+    <div 
+      data-iframe-width="150" 
+      data-iframe-height="270" 
+      data-share-badge-id="001031e9-4872-4d89-b560-d59eedad31d8" 
+      data-share-badge-host="https://www.credly.com"
+    ></div>
   </div>
 </div>
     <div class="button-container">
@@ -194,7 +206,7 @@ export default {
 
 .badge-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 1em;
 }
 
