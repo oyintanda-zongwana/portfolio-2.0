@@ -4,7 +4,7 @@
     <div v-for="(aboutMe, index) in aboutMe" :key="index" class="about-section">
       <img :src="aboutMe.image" alt="About Me" class="about-img" data-aos="fade-right" data-aos-duration="1500">
       <div class="about-description">
-        <h4 data-aos="fade-left" data-aos-duration="1500">{{ aboutMe.description1 }}</h4>
+        <h4 data-aos="fade-left" data-aos-duration="1500">{{ aboutMe.description1 }}</h4><br><br>
         <h4 data-aos="fade-left" data-aos-duration="1500">{{ aboutMe.description2 }}</h4>
       </div>
     </div>
@@ -163,7 +163,7 @@ export default {
 }
 
 .about-description {
-  margin-top: 1em;
+  margin-top: 4em;
 }
 
 .about-description h4 {
