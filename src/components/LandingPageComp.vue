@@ -2,7 +2,7 @@
   <div class="main-container">
     <div class="container-one">
       <div class="profile" data-aos="flip-up">
-        <img src="https://oyintanda-zongwana.github.io/portfolioimgages/images/pic2.jpg" alt="ME" class="profile-img">
+        <img src="https://oyintanda-zongwana.github.io/hosted-pics/pics%20folder/1716818771873ihufebt4-%20(2).png" alt="ME" class="profile-img">
         <h1 data-aos="fade-down-right">Hi, I'm Oyintanda Zongwana</h1>
         <h4>An Aspiring Fullstack Developer</h4>
       </div>
@@ -35,8 +35,6 @@ export default {
 .main-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
   color: whitesmoke;
   padding: 4em 2em;
   text-align: center;
@@ -47,6 +45,7 @@ export default {
 }
 
 .profile-img {
+  margin-top: 3em;
   width: 100%;
   max-width: 350px;
   height: auto;
@@ -67,10 +66,10 @@ h4 {
 
 .social {
   margin-top: -1.1em;
-  font-size: 2em;
+  font-size: 3em;
   display: flex;
   justify-content: center;
-  gap: 0.1em;
+  gap: 0.2em;
 }
 
 .social a {
